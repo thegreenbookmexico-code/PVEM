@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estrategia de posicionamiento territorial PVEM y Pepe Couttolenc</title>
+  <style>
+    :root{
+      --verde-profundo:#062515;--verde-oscuro:#0b3d24;--verde:#1f7a43;--verde-neon:#8ee6a6;
+      --gris-texto:#3f463f;--gris-suave:#f5f7f2;--blanco:#fff;--borde:#dfe7dd;
+      --guinda:#861238;--rojo:#e21922;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--gris-suave);color:var(--gris-texto);line-height:1.5}
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    header{position:relative;overflow:hidden;padding:82px 24px 64px;text-align:center;color:#fff;background:radial-gradient(circle at 18% 20%,rgba(142,230,166,.28),transparent 28%),radial-gradient(circle at 82% 15%,rgba(255,255,255,.18),transparent 30%),linear-gradient(135deg,#062515 0%,#0b3d24 48%,#1f7a43 100%);border-bottom:1px solid rgba(255,255,255,.18)}
+    header:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,.15));pointer-events:none}
+    header:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-180px;top:-210px;background:rgba(142,230,166,.13);filter:blur(4px);pointer-events:none}
+    .hero-content{position:relative;z-index:1;max-width:1040px;margin:0 auto}
+    .eyebrow{display:inline-block;margin-bottom:20px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);color:#eaffef;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(10px)}
+    h1{margin:0 auto;color:#fff;font-size:clamp(2.2rem,5vw,4.5rem);line-height:1.05;font-weight:850;letter-spacing:-.04em;text-shadow:0 18px 42px rgba(0,0,0,.28)}
+    .municipio{margin-top:24px;font-size:1.18rem;color:rgba(255,255,255,.86)}
+    .municipio strong{color:#fff}
+    main{width:100%;max-width:1180px;margin:0 auto;padding:48px 24px 56px;flex:1}
+    .section-label{margin:12px 0 18px;color:var(--verde-profundo);font-size:.95rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .featured{position:relative;overflow:hidden;margin-bottom:42px;background:radial-gradient(circle at 92% 10%,rgba(142,230,166,.30),transparent 25%),linear-gradient(135deg,#fff 0%,#eef8f0 100%);border:1px solid var(--borde);border-radius:26px;padding:34px;box-shadow:0 18px 44px rgba(6,37,21,.10);display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+    .featured:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(31,122,67,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(31,122,67,.06) 1px,transparent 1px);background-size:34px 34px;pointer-events:none}
+    .featured-content,.featured-graphic{position:relative;z-index:1}
+    .featured-tag{display:inline-block;margin-bottom:14px;padding:7px 13px;border-radius:999px;background:var(--verde-profundo);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .featured h2{margin-bottom:16px;color:var(--verde-profundo);font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.12;letter-spacing:-.03em}
+    .featured p{max-width:720px;margin-bottom:24px;font-size:1.04rem;color:var(--gris-texto)}
+    .mini-chart{width:100%;max-width:380px;margin-left:auto;padding:22px;border-radius:22px;background:rgba(255,255,255,.76);border:1px solid rgba(223,231,221,.95);box-shadow:0 14px 34px rgba(6,37,21,.08);backdrop-filter:blur(10px)}
+    .mini-chart-title{margin-bottom:14px;color:var(--verde-profundo);font-size:.88rem;font-weight:800}
+    .bar{display:flex;height:28px;overflow:hidden;border-radius:999px;background:#e8ece8}
+    .morena{width:72%;background:var(--guinda)}.pt{width:6%;background:var(--rojo)}.pvem-directo{width:12%;background:#137d2c}.pvem-otro{width:9%;background:#58be56}.alianza{width:1%;background:#9c9c9c}
+    .legend{margin-top:14px;display:grid;gap:8px;font-size:.82rem;color:#505850}
+    .legend-item{display:flex;align-items:center;gap:8px}.dot{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+    .button{display:inline-block;width:fit-content;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,var(--verde-oscuro),var(--verde));color:#fff;text-decoration:none;font-weight:700;box-shadow:0 10px 22px rgba(31,122,67,.22);transition:all .2s ease}
+    .button:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(31,122,67,.30)}
+    .pilot-title{margin:6px 0 22px}.pilot-title h2{color:var(--verde-profundo);font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.03em}.pilot-title p{margin-top:6px;color:#596159;font-size:1.02rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{background:#fff;border:1px solid var(--borde);border-radius:22px;padding:28px;box-shadow:0 14px 34px rgba(6,37,21,.08);display:flex;flex-direction:column;min-height:360px;transition:transform .2s ease,box-shadow .2s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(6,37,21,.13)}
+    .map-number{color:var(--verde);font-size:.86rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+    .card h3{color:var(--verde-profundo);font-size:1.55rem;line-height:1.2;margin-bottom:18px}
+    .description{font-size:1rem;color:var(--gris-texto);margin-bottom:26px}
+    .card .button{margin-top:auto}
+    footer{text-align:center;padding:28px 20px 36px;color:#6b726b;font-size:.95rem}
+    @media(max-width:980px){.featured{grid-template-columns:1fr}.mini-chart{max-width:100%;margin-left:0}.grid{grid-template-columns:1fr}.card{min-height:auto}header{padding:62px 20px 46px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="hero-content">
+        <span class="eyebrow">Repositorio territorial</span>
+        <h1>Estrategia de posicionamiento territorial PVEM y Pepe Couttolenc</h1>
+        <p class="municipio">Municipio piloto: <strong>Naucalpan de Juárez</strong></p>
+      </div>
+    </header>
+
+    <main>
+      <p class="section-label">Contexto estatal</p>
+
+      <section class="featured" aria-label="Visualización estatal">
+        <div class="featured-content">
+          <span class="featured-tag">Visualización estatal</span>
+          <h2>Composición del voto de la alianza MORENA + PT + PVEM — Estado de México</h2>
+          <p>Visualiza cómo se distribuye el voto de la alianza en el Estado de México, distinguiendo voto directo por partido, voto asociado al PVEM y composición por municipio y tipo de cargo.</p>
+          <a class="button" href="https://thegreenbookmexico-code.github.io/PVEM/DASHBOARD_PVEM_ALIANZA_EDOMEX.html">Ir a visualización</a>
+        </div>
+
+        <div class="featured-graphic" aria-hidden="true">
+          <div class="mini-chart">
+            <p class="mini-chart-title">Lectura general de la alianza</p>
+            <div class="bar">
+              <div class="morena"></div>
+              <div class="pt"></div>
+              <div class="pvem-directo"></div>
+              <div class="pvem-otro"></div>
+              <div class="alianza"></div>
+            </div>
+            <div class="legend">
+              <div class="legend-item"><span class="dot" style="background:#861238;"></span>MORENA directo</div>
+              <div class="legend-item"><span class="dot" style="background:#e21922;"></span>PT directo</div>
+              <div class="legend-item"><span class="dot" style="background:#137d2c;"></span>PVEM directo</div>
+              <div class="legend-item"><span class="dot" style="background:#58be56;"></span>PVEM marcado con otro partido</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pilot-title" aria-label="Municipio piloto">
+        <p class="section-label">Municipio piloto</p>
+        <h2>Naucalpan de Juárez</h2>
+        <p>Mapas iniciales para lectura social, sociodemográfica y electoral.</p>
+      </section>
+
+      <section class="grid" aria-label="Mapas disponibles">
+        <article class="card">
+          <p class="map-number">Mapa 1</p>
+          <h3>Grado de marginación — Naucalpan</h3>
+          <p class="description">Visualiza las condiciones de marginación del municipio a partir de tres capas territoriales: AGEB urbana, localidades y secciones electorales. El mapa permite prender y apagar capas para comparar la marginación urbana, la marginación por localidad y el grid electoral. Los popups muestran información clave de cada unidad territorial para interpretar mejor las condiciones sociales del municipio.</p>
+          <a class="button" href="https://thegreenbookmexico-code.github.io/PVEM/MAPA_1_marginacion_Naucalpan.html">Ir al mapa</a>
+        </article>
+
+        <article class="card">
+          <p class="map-number">Mapa 2</p>
+          <h3>Variables sociodemográficas en clave electoral — Naucalpan</h3>
+          <p class="description">Analiza indicadores sociales relevantes a nivel de sección electoral, mostrando porcentajes en el mapa y cantidades absolutas en los popups. Este mapa permite identificar secciones con mayor presencia de analfabetismo, población sin afiliación a servicios de salud, adultos mayores, viviendas sin agua y viviendas sin energía eléctrica.</p>
+          <a class="button" href="https://thegreenbookmexico-code.github.io/PVEM/MAPA_2_variables_sociodemograficas_Naucalpan.html">Ir al mapa</a>
+        </article>
+
+        <article class="card">
+          <p class="map-number">Mapa 3</p>
+          <h3>Panorama electoral — Naucalpan</h3>
+          <p class="description">Consulta el desempeño electoral por sección para tres tipos de elección: diputaciones federales, diputaciones locales y ayuntamientos. El mapa muestra candidaturas, número de votos, porcentaje de votación por sección electoral y la proporción de votos aportada por cada partido dentro de una alianza o candidatura común.</p>
+          <a class="button" href="https://thegreenbookmexico-code.github.io/PVEM/MAPA_3_panorama_electoral_Naucalpan.html">Ir al mapa</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>Hecho por The Greenbook 🍃</footer>
+  </div>
+</body>
+</html>
